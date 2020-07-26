@@ -1,6 +1,9 @@
 import React, {useState, useEffect} from "react";
 import "./App.css";
 import axios from "axios";
+import Header from './Components/Header/Header';
+import Footer from './Components/Footer/Footer';
+import Body from './Components/Body/Body';
 
 
 function App() {
@@ -33,11 +36,12 @@ axios.get('https://api.nasa.gov/planetary/apod?date=2020-07-22&api_key=DEMO_KEY'
   }, []) //Adding an empty dependency array here.
 
   return (
-    <div className="App">
-      <img src={nasaData}>
-      </img>
+    <div>
+    <Header/>
+    <Body nasaData={nasaData}/>
+    <Footer/>
     </div>
-  );
+  )
 }
 
 export default App;
