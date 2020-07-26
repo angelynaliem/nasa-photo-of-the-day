@@ -15,6 +15,7 @@ axios.get('https://api.nasa.gov/planetary/apod?date=2020-07-22&api_key=DEMO_KEY'
 
 .then(response => {
   console.log(response) //Console.log the data for now.
+
   setNasaData(response.data.hdurl)
 })
 
