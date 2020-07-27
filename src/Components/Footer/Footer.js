@@ -17,7 +17,7 @@ width: 100%
 
 const Footer =()=>{
     return (
-        <FooterDiv><h1>Footer content</h1></FooterDiv>
+        <FooterDiv><h1>Copyright 2020</h1></FooterDiv>
     )
 }
  export default Footer

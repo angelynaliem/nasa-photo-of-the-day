@@ -20,7 +20,7 @@ const Header = ()=>{
    return (
    <Heading>
       <Logo />
-       <Company>BESALI JAYA</Company>
+       <Company>NASA Photo of the Day!</Company>
        <Slogan />
    </Heading>
    )

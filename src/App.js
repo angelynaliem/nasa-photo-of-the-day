@@ -14,7 +14,7 @@ function App() {
   //Adding effect hook to handle the API call side effect.
   useEffect(() => {
 
-axios.get('https://api.nasa.gov/planetary/apod?date=2020-07-22&api_key=DEMO_KEY') //Fetching NASA data with the given endpoint via Axios.
+axios.get('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY') //Fetching NASA data with the given endpoint via Axios.
 
 .then(response => {
   console.log(response) //Console.log the data for now.

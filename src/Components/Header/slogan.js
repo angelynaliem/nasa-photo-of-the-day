@@ -9,7 +9,7 @@ const SloganStyle = styled.h1 `
 const Slogan = ()=>{
     return (
         <SloganStyle>
-            Be Salt, Be Light
+            See More Photos
     </SloganStyle>
     )
 

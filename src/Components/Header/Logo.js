@@ -15,7 +15,7 @@ const HeadingOne = styled.h1 `
 const Logo = ()=>{
     return (
         <HeadingOneDiv>
-    <HeadingOne>BJ</HeadingOne>
+    <HeadingOne>NASA</HeadingOne>
     </HeadingOneDiv>
     )
 }
