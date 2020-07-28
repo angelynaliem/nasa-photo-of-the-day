@@ -35,28 +35,27 @@ const BodySubContainer = styled.div`
     position: absolute;
     z-index: 99;
     margin: 0 auto;
-    right: 0;
+    right: 10;
     top: 10%;
     margin-left: 10%;
-    border-radius: 10%;
-    opacity: 50%;
-    width: 50%;
-    height: 50%;
-    text-align: center;
+    width: 25%;
+    height: 75%;
+    text-align: justify;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;  
+    line-height: 100%;
 `;
 
 const BodyH1 = styled.h1`
     margin-top: 10%;
     color: yellow;
     text-align: center;
+  
 `;
 
 const BodyP = styled.p`
     color: yellow;
+ 
 `;
 
 const Body = (props) => {
