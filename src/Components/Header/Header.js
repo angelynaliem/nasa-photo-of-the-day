@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Slogan from './slogan'
 import Logo from './Logo'
+import Image from './nasa-header.jpg'
 
 //css for main header div
 const Heading = styled.div `
@@ -9,10 +10,14 @@ const Heading = styled.div `
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: dodgerblue;
     margin:0;
-    padding: 10px;
-    opacity: 80%;
+    background-image: url(${Image});
+    background-size: 100% 100%;
+    position: fixed;
+    margin: 0;
+    top: 0;
+    right: 0;
+    left: 0;
 `;
 const Company = styled.h1 `
     font-size: 20px;

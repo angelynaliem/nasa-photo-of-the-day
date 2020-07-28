@@ -43,7 +43,7 @@ const BodySubContainer = styled.div`
     text-align: justify;
     display: flex;
     flex-direction: column;
-    line-height: 100%;
+    line-height: 1.5;
 `;
 
 const BodyH1 = styled.h1`
