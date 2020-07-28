@@ -6,20 +6,20 @@ color: yellow;
 display: flex;
 justify-content: center;
 align-items: center;
-background-color: dodgerblue;
 margin:0;
-padding: 10px;
+padding: 1%;
 position: fixed;
-left: 0;
+right: 0;
 bottom: 0;
 width: 100%
+opacity: 80%;
 `;
 
 const Footer =(props)=>{
 
     const {nasaCopyright} = props;
     return (
-        <FooterDiv><h1>Copyright: {nasaCopyright}</h1></FooterDiv>
+        <FooterDiv><h1>Copyright {nasaCopyright}</h1><i className="fa fa-twitter" aria-hidden="true" onClick="https://twitter.com/nasa"></i></FooterDiv>
     )
 }
  export default Footer

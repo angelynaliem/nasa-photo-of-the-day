@@ -12,6 +12,7 @@ const Heading = styled.div `
     background-color: dodgerblue;
     margin:0;
     padding: 10px;
+    opacity: 80%;
 `;
 const Company = styled.h1 `
     font-size: 40px;
