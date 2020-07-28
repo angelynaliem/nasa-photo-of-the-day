@@ -2,7 +2,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const SloganStyle = styled.h1 `
+const SloganStyle = styled.h3 `
     margin: 0 20px;
 `;
 

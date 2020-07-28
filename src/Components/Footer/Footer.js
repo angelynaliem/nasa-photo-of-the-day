@@ -15,11 +15,18 @@ width: 100%
 opacity: 80%;
 `;
 
+const SocMed = styled.i `
+padding: 10%;
+`;
+
 const Footer =(props)=>{
 
     const {nasaCopyright} = props;
     return (
-        <FooterDiv><h1>Copyright {nasaCopyright}</h1><i className="fa fa-twitter" aria-hidden="true" onClick="https://twitter.com/nasa"></i></FooterDiv>
+        <FooterDiv>
+            <h6>Copyright {nasaCopyright}</h6>
+        <SocMed className="fa fa-twitter" aria-hidden="true" onClick="https://twitter.com/nasa"></SocMed>
+        </FooterDiv>
     )
 }
  export default Footer

@@ -15,7 +15,7 @@ const Heading = styled.div `
     opacity: 80%;
 `;
 const Company = styled.h1 `
-    font-size: 40px;
+    font-size: 20px;
 `
 const Header = (props)=>{
 

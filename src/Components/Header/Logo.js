@@ -5,7 +5,7 @@ const HeadingOneDiv = styled.div `
 `;
 
 
-const HeadingOne = styled.h1 `
+const HeadingOne = styled.h3 `
     background-color: yellow;
     padding: 10px;
     color: dodgerblue;
