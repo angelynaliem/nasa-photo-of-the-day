@@ -16,11 +16,13 @@ const Heading = styled.div `
 const Company = styled.h1 `
     font-size: 40px;
 `
-const Header = ()=>{
+const Header = (props)=>{
+
+    const {nasaTitle} = props;
    return (
    <Heading>
       <Logo />
-       <Company>NASA Photo of the Day!</Company>
+       <Company>{nasaTitle}</Company>
        <Slogan />
    </Heading>
    )

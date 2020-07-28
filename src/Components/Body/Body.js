@@ -1,52 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 
-// const BodyImage = styled.img `
-//     height: 100vh;
-//     width: 100%;
-//     object-fit: cover;
-// `;
-
-// const BodyMainContainer = styled.div`
-//     width: 100%;
-//     text-align: center;
-// `;
-
-// const BodySubContainer = styled.div`
-//     padding: 20px;
-//     border-color: blue;
-//     background-color: yellow;
-//     text-align: center;
-// `;
-
-// const BodyH1 = styled.h1`
-//     color: black;
-// `;
-
-// const BodyH2 = styled.h2`
-//     color: black;
-// `;
-
-// const Body = (props) => {
-
-// const { nasaData } = props;
-
-//     return (
-//         <BodyMainContainer>
-//             <BodyImage src={nasaData} alt="NASA Photo of the Day"></BodyImage>
-//             <BodySubContainer>
-//                 <BodyH1>Enjoy today's photo of the day by NASA</BodyH1>
-//                 <BodyH2>Want to learn more about NASA?</BodyH2>
-//                 <BodyH2>Click here!</BodyH2>
-//             </BodySubContainer>
-//         </BodyMainContainer>
-
-     
-//      )
-// }
-//  export default Body;
-
-
 //  const Posts = (props) => {
 //     // 🔥 Make sure the parent of Posts is passing the right props!
 //     const { likePost, posts } = props;
@@ -133,36 +87,22 @@ const BodySubTextH2Container = styled.div`
     margin-top: 0.5%;
 `;
 
-const BodyH2 = styled.h2`
-    color: dodgerblue;
-`;
-
-const BodySubTextH3Container = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-`;
-
-const BodyH3 = styled.h3`
+const BodyP = styled.p`
     color: dodgerblue;
 `;
 
 const Body = (props) => {
 
-    const { nasaData } = props;
+    const { nasaData, nasaExplanation, nasaDate } = props;
     return (
         <BodyMainContainer>
             <BodyImage src={nasaData} alt="NASA Photo"></BodyImage>
             <BodySubContainer>
-            <BodyH1>Check out this NASA Pic!</BodyH1>
+            <BodyH1>{nasaDate}</BodyH1>
             <BodySubH1Container>
                 <BodySubImage src={nasaData} alt="NASA Photo"></BodySubImage>
                     <BodySubTextH2Container>
-                        <BodyH2>Pretty amazing huh?</BodyH2>
-                        <BodySubTextH3Container>
-                            <BodyH3>Want to see more photos?</BodyH3>
-                            <BodyH3>Click here</BodyH3>
-                        </BodySubTextH3Container>
+                        <BodyP>{nasaExplanation}</BodyP>
                     </BodySubTextH2Container>
                 </BodySubH1Container>
             </BodySubContainer>

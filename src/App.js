@@ -10,16 +10,24 @@ function App() {
 
   // Adding the state for the data to get from NASA.
   const [nasaData, setNasaData] = useState([])
+  const [nasaExplanation, setNasaExplanation] = useState([])
+  const [nasaTitle, setNasaTitle] = useState([])
+  const [nasaDate, setNasaDate] = useState([])
+  const [nasaCopyright, setNasaCopyright] = useState([])
 
   //Adding effect hook to handle the API call side effect.
   useEffect(() => {
 
-axios.get('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY') //Fetching NASA data with the given endpoint via Axios.
+axios.get('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&date=2020-07-25') //Fetching NASA data with the given endpoint via Axios.
 
 .then(response => {
   console.log(response) //Console.log the data for now.
 
   setNasaData(response.data.hdurl)
+  setNasaExplanation(response.data.explanation)
+  setNasaTitle(response.data.title)
+  setNasaDate(response.data.date)
+  setNasaCopyright(response.data.copyright)
 })
 
 .catch(error => {
@@ -37,9 +45,9 @@ axios.get('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY') //Fetching NAS
 
   return (
     <div>
-    <Header/>
-    <Body nasaData={nasaData}/>
-    <Footer/>
+    <Header nasaTitle={nasaTitle}/>
+    <Body nasaData={nasaData} nasaExplanation={nasaExplanation} nasaDate={nasaDate} />
+    <Footer nasaCopyright={nasaCopyright}/>
     </div>
   )
 }

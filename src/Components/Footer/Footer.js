@@ -15,9 +15,11 @@ bottom: 0;
 width: 100%
 `;
 
-const Footer =()=>{
+const Footer =(props)=>{
+
+    const {nasaCopyright} = props;
     return (
-        <FooterDiv><h1>Copyright 2020</h1></FooterDiv>
+        <FooterDiv><h1>Copyright: {nasaCopyright}</h1></FooterDiv>
     )
 }
  export default Footer
