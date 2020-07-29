@@ -1,14 +1,15 @@
 import React from 'react'
 import styled from 'styled-components';
+
 const HeadingOneDiv = styled.div `
     margin 0 20px;
 `;
 
 
 const HeadingOne = styled.h3 `
-    background-color: yellow;
+    background-color: black;
     padding: 10px;
-    color: dodgerblue;
+    color: white;
     border-radius: 10px;
 `;
 

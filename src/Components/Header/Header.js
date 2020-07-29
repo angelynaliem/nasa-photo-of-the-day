@@ -1,17 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
-import Slogan from './slogan'
+import MorePics from './more-pics'
 import Logo from './Logo'
-import Image from './nasa-header.jpg'
+
 
 //css for main header div
 const Heading = styled.div `
-    color: yellow;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin:0;
-    background-image: url(${Image});
     background-size: 100% 100%;
     position: fixed;
     margin: 0;
@@ -19,17 +17,22 @@ const Heading = styled.div `
     right: 0;
     left: 0;
 `;
-const Company = styled.h1 `
+const Title = styled.h1 `
     font-size: 20px;
+    background-color: black;
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
 `
 const Header = (props)=>{
 
-    const {nasaTitle} = props;
+    const { title } = props.nasaData;
+
    return (
    <Heading>
       <Logo />
-       <Company>{nasaTitle}</Company>
-       <Slogan />
+       <Title>{title}</Title>
+       <MorePics/>
    </Heading>
    )
 }

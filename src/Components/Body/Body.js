@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
+
 //  const Posts = (props) => {
 //     // 🔥 Make sure the parent of Posts is passing the right props!
 //     const { likePost, posts } = props;
@@ -36,7 +37,7 @@ const BodySubContainer = styled.div`
     z-index: 99;
     margin: 0 auto;
     right: 10;
-    top: 10%;
+    top: 20%;
     margin-left: 10%;
     width: 25%;
     height: 75%;
@@ -60,13 +61,15 @@ const BodyP = styled.p`
 
 const Body = (props) => {
 
-    const { nasaData, nasaExplanation, nasaDate } = props;
+    const { hdurl, date, explanation } = props.nasaData; 
+
+   
     return (
         <BodyMainContainer>
-            <BodyImage src={nasaData} alt="NASA Photo"></BodyImage>
+            <BodyImage src={hdurl} alt="NASA Photo of the Day"></BodyImage>
             <BodySubContainer>
-            <BodyH1>{nasaDate}</BodyH1>
-            <BodyP>{nasaExplanation}</BodyP>
+            <BodyH1>{date}</BodyH1>
+            <BodyP>{explanation}</BodyP>
             </BodySubContainer>
         </BodyMainContainer>
 
